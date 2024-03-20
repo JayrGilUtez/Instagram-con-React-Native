@@ -3,7 +3,6 @@ import React from 'react'
 import { Image } from '@rneui/base'
 import { useNavigation } from '@react-navigation/native';
 
-
 import LofiImage1 from '../../assets/LofiImage1.jpg'
 import LofiImage2 from '../../assets/LofiImage2.png'
 import LofiImage3 from '../../assets/LofiImage3.jpg'
@@ -28,11 +27,9 @@ export default function ProfileFlatList() {
                 renderItem={({ item }) => (
                     <TouchableOpacity
                         onPress={() => navigator.navigate('ImageScreen', { source: item.source, description: item.description })}
-
                     >
 
                         <Image source={item.source} style={styles.image} />
-
 
                     </TouchableOpacity>
 

@@ -26,7 +26,6 @@ export default function HomeFlatList() {
                 renderItem={({ item }) => (
                     <View>
 
-
                         <ContentViwer
                             userName='Jayr_Gil'
                             source={item.source}

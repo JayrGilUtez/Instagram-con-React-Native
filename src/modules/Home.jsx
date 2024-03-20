@@ -1,14 +1,12 @@
-import { StyleSheet, Text, View, ScrollView } from 'react-native'
+import { StyleSheet, Text, View} from 'react-native'
 import React from 'react'
 import HomeFlatList from './HomeFlatList.jsx'
 import { Icon } from '@rneui/base'
+
+
 export default function Home() {
-    // debe tener id, description, y source
-
-
     return (
         <View>
-
 
             <View style={styles.storiesContainer}>
                 <View style={styles.mainUserStoriesContainer}>
@@ -42,10 +40,7 @@ export default function Home() {
 
             </View>
 
-
-
             <HomeFlatList />
-
 
         </View>
     )
